@@ -8,6 +8,7 @@ const AppHeader = () => {
                 <h1>Weeb Haven</h1>
             </div>
             <div>
+                <Link to='/'>Home</Link>
                 <Link to='/anime'>Search an Anime</Link>
                 <Link to='/manga'>Search a Manga</Link>
             </div>
