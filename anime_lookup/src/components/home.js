@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
-        <div>
-            <Link to='/anime'>
+        <div className='buttons'>
+            <Link to='/anime' className='anime'>
                 Get some Anime!
             </Link>
-            <Link to='/manga'>
+            <Link to='/manga' className='manga'>
                 Get some Manga!
             </Link>
         </div>

@@ -20,24 +20,26 @@ const Manga = (props) => {
 
     return (
         <>
-            <div>
-                <div>
+            <div className='manga-container'>
+                <div className='manga-title'>
                     <h2>{manga.title}</h2>
                     <img src={manga.image_url} alt={manga.image_url}/>
                 </div>
-                <div>
-                    <p>Status: {manga.status}</p>
-                    <p>Volumes: {manga.volumes}</p>
-                    <p>Chapters: {manga.chapters}</p>
-                </div>
-                <div>
-                    <p>Published: {manga.published}</p>
-                    <p>Rank: {manga.rank}</p>
-                    <p>MALScore: {manga.score}</p>
-                </div>
-                <div>
-                    <p>Synopsis:</p> 
-                    <p>{manga.synopsis}</p>
+                <div className='manga-info'>
+                    <div className='manga-general'>
+                        <p>Status: {manga.status}</p>
+                        <p>Volumes: {manga.volumes}</p>
+                        <p>Chapters: {manga.chapters}</p>
+                    </div>
+                    <div className='manga-misc'>
+                        <p>Published: {manga.published}</p>
+                        <p>Rank: {manga.rank}</p>
+                        <p>MALScore: {manga.score}</p>
+                    </div>
+                    <div className='manga-synopsis'>
+                        <p>Synopsis:</p> 
+                        <p>{manga.synopsis}</p>
+                    </div>
                 </div>
             </div>
         </>

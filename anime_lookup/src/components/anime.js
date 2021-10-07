@@ -20,24 +20,26 @@ const Anime = (props) => {
 
     return (
         <>
-            <div>
-                <div>
+            <div className='anime-container'>
+                <div className='anime-title'>
                     <h2>{anime.title}</h2>
                     <img src={anime.image_url} alt={anime.image_url}/>
                 </div>
-                <div>
-                    <p>Episodes: {anime.episodes}</p>
-                    <p>Status: {anime.status}</p>
-                    <p>Aired: {anime.aired}</p>
-                </div>
-                <div>
-                    <p>Rating: {anime.rating}</p>
-                    <p>MALScore: {anime.score}</p>
-                    <p>Rank: {anime.rank}</p>
-                </div>
-                <div>
-                    <p>Synopsis:</p> 
-                    <p>{anime.synopsis}</p>
+                <div className='anime-info'>
+                    <div className='anime-general'>
+                        <p>Episodes: {anime.episodes}</p>
+                        <p>Status: {anime.status}</p>
+                        <p>Aired: {anime.aired}</p>
+                    </div>
+                    <div className='anime-misc'>
+                        <p>Rating: {anime.rating}</p>
+                        <p>MALScore: {anime.score}</p>
+                        <p>Rank: {anime.rank}</p>
+                    </div>
+                    <div className='anime-synopsis'>
+                        <p>Synopsis:</p> 
+                        <span>{anime.synopsis}</span>
+                    </div>
                 </div>
             </div>
         </>

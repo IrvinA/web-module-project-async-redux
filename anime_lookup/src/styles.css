@@ -5,9 +5,314 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/*Header Styles*/
+.container, .search {
+  background-color: white;
+  margin: 3%;
+  padding-bottom: 3%;
+}
+
+.app-title {
+  text-align: center;
+  font-size: 3rem;
+  text-shadow: 1px 1px lime;
+  padding: 2% 0;
+}
+
+.app-title h1{
+  background-image: linear-gradient(to top, black, lime, white 50%, lime, black);
+  border: 2px solid black;
+  margin: 3% 25%;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.links a {
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 1%;
+  border-radius: 50px;
+  width: 25%;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-shadow: 1px 1px lime;
+  font-weight: 600;
+  background-color: snow;
+}
+
+.links a:hover {
+  transition: 1s all;
+  transform: scale(1.2);
+  color: white;
+  background-color: black;
+}
+
+/*Home Styles*/
+.buttons {
+  height: 800px;
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid black;
+  align-items: center;
+  background-image: url('https://images.unsplash.com/photo-1613376023733-0a73315d9b06?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.buttons a {
+  border: 1px solid black;
+  padding: 10%;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  text-shadow: 1px 1px lime;
+  font-weight: 600;
+  font-size: 2rem;
+  border-radius: 50px;
+  background-image: linear-gradient(to top, black, lime, white 50%, lime, black);
+  text-transform: uppercase;
+}
+
+/*Anime Styles*/
+.anime-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.anime-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.anime-title h2 {
+  font-size: 2rem;
+  text-shadow: 1px 1px lime;
+  border-top: 1px solid lime;
+  border-bottom: 1px solid black;
+  padding: 1% 7%;
+  border-radius: 50px;
+  background-color: snow;
+}
+
+.anime-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items:center;
+  width: 30%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid lime;
+  border-right: 2px solid lime;
+  padding: 5% 10%;
+  background-color: snow;
+  border-radius: 20px;
+}
+
+.anime-general {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 2px solid lime;
+  border-bottom: 1px solid lime;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  width: 100%;
+  padding: 0 15%;
+  background-color: black;
+  border-radius: 20px;
+}
+
+.anime-general p {
+  font-weight: 600;
+  text-shadow: 1px 1px lime;
+  background-image: linear-gradient(to right, snow, black 90%, lime);
+  width: 100%;
+  padding: 4% 0 4% 4%;
+  border-top-left-radius: 20px;
+}
+
+.anime-misc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid lime;
+  border-bottom: 1px solid lime;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  width: 100%;
+  padding: 0 15%;
+  background-color: black;
+}
+
+.anime-misc p {
+  font-weight: 600;
+  text-shadow: 1px 1px lime;
+  background-image: linear-gradient(to right, snow, black 90%, lime);
+  width: 100%;
+  padding: 4% 0 4% 4%;
+  border-top-left-radius: 20px;
+}
+
+.anime-synopsis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid lime;
+  border-bottom: 2px solid lime;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  width: 100%;
+  padding: 0 15% 5% 15%;
+  background-color: black;
+}
+
+.anime-synopsis p {
+  font-weight: 600;
+  text-shadow: 1px 1px lime;
+  background-image: linear-gradient(to right, snow, black 90%, lime);
+  width: 100%;
+  padding: 4% 0 4% 4%;
+  border-top-left-radius: 20px;
+}
+
+.anime-synopsis span {
+  font-weight: 600;
+  text-shadow: 1px 1px lime;
+  background-image: linear-gradient(to right, snow, white);
+  width: 100%;
+  padding: 4% 2%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/*Manga Styles*/
+.manga-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.manga-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.manga-title h2 {
+  font-size: 2rem;
+  text-shadow: 1px 1px lime;
+  border-top: 1px solid lime;
+  border-bottom: 1px solid black;
+  padding: 1% 7%;
+  border-radius: 50px;
+  background-color: snow;
+}
+
+.manga-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items:center;
+  width: 30%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid lime;
+  border-right: 2px solid lime;
+  padding: 5% 10%;
+  background-color: snow;
+  border-radius: 20px;
+}
+
+.manga-general {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 2px solid lime;
+  border-bottom: 1px solid lime;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  width: 100%;
+  padding: 0 15%;
+  background-color: black;
+  border-radius: 20px;
+}
+
+.manga-general p {
+  font-weight: 600;
+  text-shadow: 1px 1px lime;
+  background-image: linear-gradient(to right, snow, black 90%, lime);
+  width: 100%;
+  padding: 4% 0 4% 4%;
+  border-top-left-radius: 20px;
+}
+
+.manga-misc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid lime;
+  border-bottom: 1px solid lime;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  width: 100%;
+  padding: 0 15%;
+  background-color: black;
+}
+
+.manga-misc p {
+  font-weight: 600;
+  text-shadow: 1px 1px lime;
+  background-image: linear-gradient(to right, snow, black 90%, lime);
+  width: 100%;
+  padding: 4% 0 4% 4%;
+  border-top-left-radius: 20px;
+}
+
+.manga-synopsis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid lime;
+  border-bottom: 2px solid lime;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  width: 100%;
+  padding: 0 15% 5% 15%;
+  background-color: black;
+}
+
+.manga-synopsis p {
+  font-weight: 600;
+  text-shadow: 1px 1px lime;
+  background-image: linear-gradient(to right, snow, black 90%, lime);
+  width: 100%;
+  padding: 4% 0 4% 4%;
+  border-top-left-radius: 20px;
+}
+
+.manga-synopsis span {
+  font-weight: 600;
+  text-shadow: 1px 1px lime;
+  background-image: linear-gradient(to right, snow, white);
+  width: 100%;
+  padding: 4% 2%;
+  border-radius: 10px;
+  text-align: center;
 }
