@@ -38,7 +38,7 @@ const Manga = (props) => {
                     </div>
                     <div className='manga-synopsis'>
                         <p>Synopsis:</p> 
-                        <p>{manga.synopsis}</p>
+                        <span>{manga.synopsis}</span>
                     </div>
                 </div>
             </div>
